@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: logging
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/your-org/magazik-gitops.git
+    targetRevision: HEAD
+    path: infrastructure/logging
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: logging
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true

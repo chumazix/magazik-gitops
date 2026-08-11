@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: postgres
+  name: magazik-backend-production
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/your-org/magazik-gitops.git
     targetRevision: HEAD
-    path: infrastructure/postgres
+    path: apps/backend/production
   destination:
     server: https://kubernetes.default.svc
-    namespace: database
+    namespace: production
   syncPolicy:
     automated:
       selfHeal: true

@@ -1,0 +1,8 @@
+apiVersion: v2
+name: magazik-backend-production
+version: 0.1.0
+dependencies:
+  - name: magazik-backend
+    version: 0.1.0
+    repository: file://../../../../magazik-app/charts/magazik-backend1
+

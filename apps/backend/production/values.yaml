@@ -1,0 +1,5 @@
+magazik-backend:
+  replicaCount: 3
+  image:
+    tag: "v1.0.0"2
+
