@@ -1,4 +1,9 @@
-magazik-backend:
-  replicaCount: 1
-  image:
-    tag: "latest"
+replicaCount: 1
+image:
+  repository: magazik-backend
+  tag: "latest"
+  pullPolicy: IfNotPresent
+env:
+  DATABASE_URL: "postgresql+asyncpg://postgres:postgres@postgres-postgresql:5432/magazik"
+  REDIS_URL: "redis://redis-master:6379"
+  KAFKA_BOOTSTRAP_SERVERS: "kafka-cluster-kafka-bootstrap:9092"

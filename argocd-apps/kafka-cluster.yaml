@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/your-org/magazik-gitops.git
+    repoURL: https://github.com/chumazix/magazik-gitops.git
     targetRevision: HEAD
     path: infrastructure/kafka
   destination:

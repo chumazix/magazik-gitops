@@ -1,0 +1,4 @@
+apiVersion: v2
+name: kafka-cluster
+description: Kafka cluster with Strimzi
+version: 0.1.0

@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     chart: strimzi-kafka-operator
-    repoURL: https://strimzi.io/charts/
+    repoURL: oci://quay.io/strimzi-helm
     targetRevision: 0.35.0
   destination:
     server: https://kubernetes.default.svc
