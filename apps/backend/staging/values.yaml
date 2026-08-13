@@ -1,6 +1,6 @@
 replicaCount: 1
 image:
-  repository: magazik-backend
+  repository: magazik-app-backend
   tag: "latest"
   pullPolicy: IfNotPresent
 env:
