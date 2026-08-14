@@ -1,4 +1,5 @@
 grafana:
   enabled: true
+  adminPassword: admin
 prometheus:
   enabled: true

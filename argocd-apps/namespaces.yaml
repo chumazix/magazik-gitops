@@ -17,4 +17,4 @@ spec:
       selfHeal: true
       prune: true
     syncOptions:
-      - CreateNamespace=false  # не нужно, т.к. неймспейсы уже существуют
+      - CreateNamespace=false

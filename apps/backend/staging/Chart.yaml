@@ -1,3 +1,7 @@
 apiVersion: v2
 name: magazik-backend-staging
 version: 0.1.0
+dependencies:
+  - name: magazik-backend
+    version: 0.1.0
+    repository: https://github.com/chumazix/magazik-app.git/charts/magazik-backend
