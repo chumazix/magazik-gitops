@@ -4,6 +4,6 @@ image:
   tag: "latest"
   pullPolicy: IfNotPresent
 env:
-  DATABASE_URL: "postgresql+asyncpg://postgres:postgres@postgres.database:5432/magazik"
+  DATABASE_URL: "postgresql+asyncpg://postgres:postgres@postgres.database.svc.cluster.local:5432/magazik"
   REDIS_URL: "redis://redis.cache:6379"
   KAFKA_BOOTSTRAP_SERVERS: "kafka.kafka:9092"
