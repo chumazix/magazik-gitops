@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: magazik-frontend
+  namespace: staging
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: magazik-frontend
+  template:
+    metadata:
+      labels:
+        app: magazik-frontend
+    spec:
+      containers:
+      - name: frontend
+        image: magazik-frontend:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: magazik-frontend
+  namespace: staging
+spec:
+  selector:
+    app: magazik-frontend
+  ports:
+  - port: 80
+    targetPort: 80
