@@ -4,6 +4,7 @@ Magazik GitOps — ArgoCD-конфигурация для интернет-ма�
 
 Структура репозитория
 
+```bash
 magazik-gitops/
 ├── infrastructure/ # Инфраструктурные сервисы
 │ ├── namespaces/ # Неймспейсы (plain YAML)
@@ -27,6 +28,7 @@ magazik-gitops/
 ├── magazik-frontend-staging.yaml
 ├── monitoring.yaml
 └── logging.yaml
+```
 
 Применение манифестов вручную
 
